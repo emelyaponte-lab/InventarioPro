@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InventarioPro - Eliminar Producto</title>
+
+    <link rel="stylesheet" href="plantilla/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container py-4">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item">
+                    <a href="dashboard.html">Inicio</a>
+                </li>
+
+                <li class="breadcrumb-item">
+                    <a href="productos.html">Productos</a>
+                </li>
+
+                <li class="breadcrumb-item active">
+                    Eliminar Producto
+                </li>
+
+            </ol>
+        </nav>
+
+        <!-- Contenedor -->
+        <div class="row justify-content-center">
+
+            <div class="col-md-7 col-lg-6">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-header bg-danger text-white">
+
+                        <h4 class="mb-0">
+                            ¡Atención! Confirmación requerida
+                        </h4>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <div class="alert alert-warning">
+
+                            ¿Estás seguro de que deseas eliminar este producto?
+
+                            <br>
+
+                            Esta acción no se puede deshacer.
+
+                        </div>
+
+                        <h5 class="mb-3">
+                            Detalles del Registro
+                        </h5>
+
+                        <div class="border rounded p-3 mb-4">
+
+                            <p class="mb-2">
+                                <strong>SKU:</strong> SKU-001
+                            </p>
+
+                            <p class="mb-2">
+                                <strong>Nombre:</strong> Laptop Lenovo
+                            </p>
+
+                            <p class="mb-2">
+                                <strong>Categoría:</strong> Tecnología
+                            </p>
+
+                            <p class="mb-0">
+                                <strong>Estado Actual:</strong>
+
+                                <span class="badge text-bg-success">
+                                    En Stock
+                                </span>
+                            </p>
+
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="d-flex gap-2">
+
+                            <button type="button"
+                                class="btn btn-danger"
+                                onclick="confirmarEliminacion()">
+
+                                Confirmar y Eliminar
+
+                            </button>
+
+                            <a href="productos.html"
+                                class="btn btn-secondary">
+
+                                Cancelar y Volver
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function confirmarEliminacion() {
+
+            const confirmar = confirm(
+                "¿Estás seguro de que deseas eliminar este producto?"
+            );
+
+            if (confirmar) {
+
+                alert("Producto eliminado correctamente.");
+
+                window.location.href = "productos.html";
+
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

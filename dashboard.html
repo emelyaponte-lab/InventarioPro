@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InventarioPro - Panel de Control</title>
+
+    <link rel="stylesheet" href="plantilla/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container-fluid py-4">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="dashboard.html">Inicio</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    Panel de Control
+                </li>
+            </ol>
+        </nav>
+
+        <!-- Alerta de bienvenida -->
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>¡Bienvenido!</strong>
+            Has ingresado correctamente al sistema InventarioPro.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+
+        <!-- Título -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <div>
+                <h1 class="fw-bold">Panel Operativo</h1>
+                <p class="text-muted">
+                    Administración y control del inventario
+                </p>
+            </div>
+
+            <button class="btn btn-outline-primary">
+                🔔 <span class="badge text-bg-primary">3</span>
+            </button>
+
+        </div>
+
+        <div class="row">
+
+            <!-- Menú lateral -->
+            <div class="col-md-3 mb-4">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-header bg-primary text-white">
+                        Menú Principal
+                    </div>
+
+                    <div class="list-group list-group-flush">
+
+                        <a href="dashboard.html"
+                            class="list-group-item list-group-item-action active">
+                            Inicio
+                        </a>
+
+                        <a href="productos.html"
+                            class="list-group-item list-group-item-action">
+                            Productos
+                        </a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action">
+                            Usuarios
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Contenido -->
+            <div class="col-md-9">
+
+                <div class="row g-4">
+
+                    <!-- Stock -->
+                    <div class="col-md-6">
+
+                        <div class="card shadow-sm h-100">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Stock Disponible
+                                </h5>
+
+                                <h2 class="fw-bold mt-3">
+                                    125
+                                </h2>
+
+                                <span class="badge text-bg-success">
+                                    En Stock
+                                </span>
+
+                                <p class="text-muted mt-2 mb-0">
+                                    Productos disponibles actualmente.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Avisos -->
+                    <div class="col-md-6">
+
+                        <div class="card shadow-sm h-100">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Avisos Pendientes
+                                </h5>
+
+                                <h2 class="fw-bold mt-3">
+                                    3
+                                </h2>
+
+                                <span class="badge text-bg-danger">
+                                    Críticos
+                                </span>
+
+                                <p class="text-muted mt-2 mb-0">
+                                    Productos que requieren atención.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="plantilla/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

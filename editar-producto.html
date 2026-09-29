@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InventarioPro - Editar Producto</title>
+
+    <link rel="stylesheet" href="plantilla/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container py-4">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item">
+                    <a href="dashboard.html">Inicio</a>
+                </li>
+
+                <li class="breadcrumb-item">
+                    <a href="productos.html">Productos</a>
+                </li>
+
+                <li class="breadcrumb-item active">
+                    Editar Producto
+                </li>
+
+            </ol>
+        </nav>
+
+        <!-- Formulario -->
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 col-lg-7">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-header bg-warning">
+
+                        <h4 class="mb-0">
+                            Modificar Producto
+                        </h4>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <form>
+
+                            <!-- Nombre -->
+                            <div class="mb-3">
+
+                                <label for="nombre" class="form-label">
+                                    Nombre del Producto
+                                </label>
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="nombre"
+                                    value="Laptop Lenovo">
+
+                            </div>
+
+                            <!-- SKU -->
+                            <div class="mb-3">
+
+                                <label for="sku" class="form-label">
+                                    Código SKU
+                                </label>
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="sku"
+                                    value="SKU-001"
+                                    disabled>
+
+                                <div class="form-text">
+                                    El código SKU no puede modificarse.
+                                </div>
+
+                            </div>
+
+                            <!-- Categoría -->
+                            <div class="mb-3">
+
+                                <label for="categoria" class="form-label">
+                                    Categoría
+                                </label>
+
+                                <select class="form-select"
+                                    id="categoria">
+
+                                    <option value="tecnologia" selected>
+                                        Tecnología
+                                    </option>
+
+                                    <option value="accesorios">
+                                        Accesorios
+                                    </option>
+
+                                    <option value="oficina">
+                                        Oficina
+                                    </option>
+
+                                    <option value="otros">
+                                        Otros
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <!-- Disponibilidad -->
+                            <div class="mb-4">
+
+                                <label for="estado" class="form-label">
+                                    Disponibilidad
+                                </label>
+
+                                <select class="form-select"
+                                    id="estado">
+
+                                    <option value="stock" selected>
+                                        En Stock
+                                    </option>
+
+                                    <option value="agotado">
+                                        Agotado
+                                    </option>
+
+                                    <option value="descontinuado">
+                                        Descontinuado
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <!-- Botones -->
+                            <div class="d-flex gap-2">
+
+                                <button type="submit"
+                                    class="btn btn-primary">
+
+                                    Actualizar Cambios
+
+                                </button>
+
+                                <a href="productos.html"
+                                    class="btn btn-secondary">
+
+                                    Cancelar
+
+                                </a>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

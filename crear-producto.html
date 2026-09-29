@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InventarioPro - Crear Producto</title>
+
+    <link rel="stylesheet" href="plantilla/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container py-4">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item">
+                    <a href="dashboard.html">Inicio</a>
+                </li>
+
+                <li class="breadcrumb-item">
+                    <a href="productos.html">Productos</a>
+                </li>
+
+                <li class="breadcrumb-item active">
+                    Crear Producto
+                </li>
+
+            </ol>
+        </nav>
+
+        <!-- Formulario -->
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 col-lg-7">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">
+                            Crear Producto
+                        </h4>
+                    </div>
+
+                    <div class="card-body">
+
+                        <form>
+
+                            <!-- Nombre y SKU -->
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label for="nombre" class="form-label">
+                                        Nombre del Producto
+                                    </label>
+
+                                    <input type="text"
+                                        class="form-control"
+                                        id="nombre"
+                                        placeholder="Ingrese el nombre"
+                                        required>
+
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label for="sku" class="form-label">
+                                        Código SKU
+                                    </label>
+
+                                    <input type="text"
+                                        class="form-control"
+                                        id="sku"
+                                        placeholder="Ejemplo: SKU-001"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Categoría -->
+                            <div class="mb-3">
+
+                                <label for="categoria" class="form-label">
+                                    Categoría Asignada
+                                </label>
+
+                                <select class="form-select"
+                                    id="categoria"
+                                    required>
+
+                                    <option value="">
+                                        Seleccione una categoría
+                                    </option>
+
+                                    <option value="tecnologia">
+                                        Tecnología
+                                    </option>
+
+                                    <option value="accesorios">
+                                        Accesorios
+                                    </option>
+
+                                    <option value="oficina">
+                                        Oficina
+                                    </option>
+
+                                    <option value="otros">
+                                        Otros
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <!-- Disponibilidad -->
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Disponibilidad Inicial
+                                </label>
+
+                                <select class="form-select" required>
+
+                                    <option value="">
+                                        Seleccione el estado
+                                    </option>
+
+                                    <option value="stock">
+                                        En Stock
+                                    </option>
+
+                                    <option value="agotado">
+                                        Agotado
+                                    </option>
+
+                                    <option value="descontinuado">
+                                        Descontinuado
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <!-- Publicar -->
+                            <div class="form-check mb-4">
+
+                                <input class="form-check-input"
+                                    type="checkbox"
+                                    id="publicar">
+
+                                <label class="form-check-label"
+                                    for="publicar">
+
+                                    Publicar inmediatamente en el catálogo general
+
+                                </label>
+
+                            </div>
+
+                            <!-- Botones -->
+                            <div class="d-flex gap-2">
+
+                                <button type="submit"
+                                    class="btn btn-primary">
+
+                                    Guardar Producto
+
+                                </button>
+
+                                <a href="productos.html"
+                                    class="btn btn-secondary">
+
+                                    Cancelar
+
+                                </a>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

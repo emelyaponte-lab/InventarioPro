@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InventarioPro - Productos</title>
+
+    <link rel="stylesheet" href="plantilla/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container-fluid py-4">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="dashboard.html">Inicio</a>
+                </li>
+
+                <li class="breadcrumb-item active">
+                    Productos
+                </li>
+            </ol>
+        </nav>
+
+        <!-- Encabezado -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <div>
+                <h1 class="fw-bold">Gestión de Productos</h1>
+
+                <p class="text-muted">
+                    Administración del catálogo de productos
+                </p>
+            </div>
+
+            <a href="crear-producto.html"
+                class="btn btn-primary">
+                + Nuevo Producto
+            </a>
+
+        </div>
+
+        <!-- Tabla de productos -->
+        <div class="card shadow-sm">
+
+            <div class="card-header">
+                <strong>Lista de Productos</strong>
+            </div>
+
+            <div class="card-body">
+
+                <div class="table-responsive">
+
+                    <table class="table table-hover align-middle">
+
+                        <thead class="table-dark">
+
+                            <tr>
+                                <th>#</th>
+                                <th>Producto</th>
+                                <th>SKU</th>
+                                <th>Categoría</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>1</td>
+
+                                <td>
+                                    Laptop Lenovo
+                                </td>
+
+                                <td>
+                                    SKU-001
+                                </td>
+
+                                <td>
+                                    Tecnología
+                                </td>
+
+                                <td>
+                                    <span class="badge text-bg-success">
+                                        En Stock
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <a href="editar-producto.html"
+                                        class="btn btn-sm btn-warning">
+                                        Editar
+                                    </a>
+
+                                    <a href="eliminar-producto.html"
+                                        class="btn btn-sm btn-danger">
+                                        Eliminar
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>2</td>
+
+                                <td>
+                                    Mouse inalámbrico
+                                </td>
+
+                                <td>
+                                    SKU-002
+                                </td>
+
+                                <td>
+                                    Accesorios
+                                </td>
+
+                                <td>
+                                    <span class="badge text-bg-danger">
+                                        Agotado
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <a href="editar-producto.html"
+                                        class="btn btn-sm btn-warning">
+                                        Editar
+                                    </a>
+
+                                    <a href="eliminar-producto.html"
+                                        class="btn btn-sm btn-danger">
+                                        Eliminar
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
